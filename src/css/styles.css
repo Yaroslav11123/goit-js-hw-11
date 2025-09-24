@@ -18,9 +18,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20vh;
+  margin-top: 70px;
+  margin-bottom: 32px;
   gap: 12px;
-  margin-bottom: 24px;
 }
 
 .form input[type='text'] {
@@ -113,4 +113,28 @@
 .gallery-item .info p {
   margin: 0;
   font-weight: 500;
+}
+
+.loader {
+  text-align: center;
+  margin-bottom: 20px;
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
